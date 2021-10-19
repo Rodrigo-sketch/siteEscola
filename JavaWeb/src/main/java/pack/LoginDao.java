@@ -6,18 +6,19 @@ public class LoginDao {
 
 	public static boolean validate(LoginBean bean){
 		boolean status=false;
-		String perfil = "";
+		int perfil = 0;
 		Logger lgr = Logger.getLogger(LoginDao.class.getName());
 		try{
 			Class.forName("com.mysql.jdbc.Driver");  
 			Connection con=DriverManager.getConnection(Provider.CONNECTION_URL,Provider.USERNAME,Provider.PASSWORD);    
 			Statement statement = con.createStatement(); 
-			ResultSet resultSet = statement.executeQuery("select * from users where username=\""+bean.getUsername()+"\" and pass=\""+bean.getPass()+"\"");
+			ResultSet resultSet = statement.executeQuery("select * from usuarios where Login=\""+bean.getUsername()+"\" and Senha=\""+bean.getPass()+"\"");
 			if(resultSet.next()) {  
 				status = true;
-				perfil = resultSet.getString("type");
+				perfil = resultSet.getInt("tipo");
+				bean.setType(perfil);				
 			}			
-			bean.setType(perfil);
+			
 			con.close(); 
 			
 		}catch(Exception e){			

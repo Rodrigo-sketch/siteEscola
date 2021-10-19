@@ -1,6 +1,7 @@
 package pack;
 public class LoginBean {
-private String email,pass,username,type;
+private String email,Senha,Login;
+private int tipo;
 
 public String getEmail() {
 	return email;
@@ -11,27 +12,27 @@ public void setEmail(String email) {
 }
 
 public String getPass() {
-	return pass;
+	return Senha;
 }
 
-public void setPass(String pass) {
-	this.pass = pass;
+public void setPass(String senha) {
+	this.Senha = senha;
 }
 
 public String getUsername() {
-	return username;
+	return Login;
 }
 
-public void setUsername(String username) {
-	this.username = username;
+public void setUsername(String Login) {
+	this.Login = Login;
 }
 
-public String getType() {
-	return type;
+public int getType() {
+	return tipo;
 }
 
-public void setType(String type) {
-	this.type = type;
+public void setType(int tipo) {
+	this.tipo = tipo;
 }
 
 

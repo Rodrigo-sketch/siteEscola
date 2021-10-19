@@ -14,14 +14,14 @@
 	<div class="container">
 		<div class="container-login">
 			<div class="wrap-login">
-				<form class="login-form" action="loginprocess.jsp">
+				<form class="login-form" action="loginprocess.jsp" method="post">
 					<span class="login-form-title">
 						Faça o login
 					</span>
 
 					<div class="wrap-input margin-top-35 margin-bottom-35">
 						<input class="input-form" type="text" name="username" autocomplete="off">
-						<span class="focus-input-form" data-placeholder="Usuario"></span>
+						<span class="focus-input-form" data-placeholder="Login"></span>
 					</div>
 
 					<div class="wrap-input margin-bottom-35">
