@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -35,27 +33,6 @@
 						</button>
 					</div>
 
-					<ul class="login-utils">
-						<li class="margin-bottom-8 margin-top-8">
-							<span class="text1">
-								Esqueceu sua
-							</span>
-
-							<a href="#" class="text2">
-								senha?
-							</a>
-						</li>
-
-						<li>
-							<span class="text1">
-								Não tem conta?
-							</span>
-
-							<a href="#" class="text2">
-								Criar
-							</a>
-						</li>
-					</ul>
 				</form>
 			</div>
 			<img src="images/login.png" width="300" height="300" class="margin-left-50" />
