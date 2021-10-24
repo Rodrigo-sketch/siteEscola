@@ -16,7 +16,7 @@ public class LoginDao {
 			if(resultSet.next()) {  
 				status = true;
 				perfil = resultSet.getInt("tipo");
-				bean.setType(perfil);				
+				bean.setType(perfil);
 			}			
 			
 			con.close(); 
